@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="container">
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for-items="{{banner_list[0].banner}}">
+    <swiper-item>
+      <image src="{{item.pic_url}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+ <view class='separator'></view>
+<view class='floortitle'>
+  <view class='floortitlecolor'></view>
+  <view class='floortitleinformation'>公司信息</view>
+</view>
+<view class='content'>
+  <view class='company'><image class='icon' src='../images/icon/company.ico'></image>大连盛世丽景文化传媒有限公司</view>
+  <view class='mobilephone'><image class='icon' src='../images/icon/mobilephone.ico'></image>13898457779</view>
+  <view class='telephone'><image class='icon' src='../images/icon/telephone.ico'></image>0411-89289777</view>
+  <view class='map' bindtap='locationViewTap'><image class='icon' src='../images/icon/map.ico'></image>大连庄河市建设大桥西行100米 >>>></view>
+</view>
+
+<view class='separator'></view>
+<view class='floortitle'>
+  <view class='floortitlecolor'></view>
+  <view class='floortitleinformation'>公司简介</view>
+</view>
+<view class='present'>
+<view class='companypresent'>大连盛世丽景文化传媒有限公司是一家集网络传播、企业宣传、网络推广、口碑营销、电视、平面报纸、杂志公关、车体广告、社区互动营销等概念有机整合的公司。为各类客户提供多元化、系统化、优质化的服务，搭建具有交流性、融合性、创新性的文化平台。</view>
+</view>
+
+<view class='separator'></view>
+<view class='floortitle'>
+  <view class='floortitlecolor'></view>
+  <view class='floortitleinformation'>业务范围</view>
+</view>
+<view class='present'>
+<view class='companypresent'>制作、代理设计微信小程序公众号、发布各类广告、图文设计、电脑动画设计、企业形象策划、市场营销策划、广告业务、电子商务、信息咨询、投资咨询、投资管理、企业管理服务、会展会务服务、网络信息技术领域内的技术开发、技术咨询、技术转让、技术服务等等。</view>
+</view>
+
+<view class='separator'></view>
+<view class='floortitle'>
+  <view class='floortitlecolor'></view>
+  <view class='floortitleinformation'>相册</view>
+  <button class='addphoto' bindtap='addphoto' size='mini' type='primary'>添加图片</button>
+</view>
+<view class='photo'><image class='images' src='{{imageList}}'></image></view>
+</view>
