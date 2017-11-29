@@ -11,25 +11,6 @@ Page({
     duration: 100,
     "banner_list": [
       {
-      //   "banner": [
-      //     {
-      //       "pic_url": "../images/1.jpg",
-      //     },
-      //     {
-      //       "pic_url": "http://static.home.mi.com/app/shop/img?id=shop_0f5e43035a8b8d27a4b6f315d222fd9b.jpeg&w=1080&h=600&crop=a_0_120_1080_480&t=webp&z=1.15&q=78",
-      //     },
-      //     {
-      //       "pic_url": "http://static.home.mi.com/app/shop/img?id=shop_4ba3d814639ab27570f174467133619f.png&w=1080&h=600&crop=a_0_120_1080_480&t=webp&z=1.15&q=78",
-      //     },
-      //    
-      //       "pic_url": "http://static.home.mi.com/app/shop/img?id=shop_91f29509f14ea243958285aaf5d5b640.jpeg&w=1080&h=600&crop=a_0_120_1080_480&t=webp&z=1.15&q=78",
-      //     },
-      //     {
-      //       "pic_url": "http://static.home.mi.com/app/shop/img?id=shop_5c752db8097555831469356f5f389078.jpeg&w=1080&h=600&crop=a_0_120_1080_480&t=webp&z=1.15&q=78",
-      //     }
-      //   ]
-      // },
-      // {
         "banner": [
           {
             "pic_url": "../images/dzswz.jpg",
@@ -47,7 +28,7 @@ Page({
         ]
       }
     ],
-    hotgoods: [
+    caseshow: [
       {
         "name": "90分轻薄羽绒服",
         "summary": "防钻绒工艺,保暖更锁温,备好深秋暖意",
@@ -85,7 +66,7 @@ Page({
         "pic_url": "http://static.home.mi.com/app/shop/img?id=shop_0b23f4b364ee73bc86b280cc7397638c.jpg&w=420&h=240&crop=a_90_0_240_240"
       }
     ],
-  },  
+  },
   //分享处理函数
   onShareAppMessage: function () {
     return {
@@ -136,5 +117,5 @@ Page({
       url: '../map/map'
     })
   },
-  
+
 })

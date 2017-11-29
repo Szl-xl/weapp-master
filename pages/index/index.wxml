@@ -46,4 +46,19 @@
   <button class='addphoto' bindtap='addphoto' size='mini' type='primary'>添加图片</button>
 </view>
 <view class='photo'><image class='images' src='{{imageList}}'></image></view>
+
+<view class='separator'></view>
+<view class='floortitle'>
+  <view class='floortitlecolor'></view>
+  <view class='floortitleinformation'>案例展示</view>
+</view>
+<view class='caseshow'>
+  <view class='caseitem' wx:for="{{caseshow}}" wx:for-index="idx" wx:for-item="show">
+    <view class='imgview'>
+      <image class='productimg' src='{{show.pic_url}}'/>
+    </view>
+    <view>{{show.name}}</view>
+  </view>
+</view>
+
 </view>
