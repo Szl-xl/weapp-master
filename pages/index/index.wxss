@@ -75,7 +75,6 @@
 .present{
   padding: 10px 5px;
   /* width: 100%; */
-  /* margin:0 5px 0 0; */
   color: #606060;
   font-size: 14px;
   text-indent : 28px;
@@ -95,6 +94,7 @@
   align-items: center;
 }
 
+/*案例展示*/
 .caseshow{
     display:flex;
     flex-wrap: wrap;
@@ -118,4 +118,10 @@
 .imgview{
   width:80px;
   height:80px;
+}
+
+/*摄影*/
+.camera{
+  display: flex;
+  flex-direction: column;
 }

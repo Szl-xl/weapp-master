@@ -11,6 +11,7 @@ Page({
     duration: 100,
     "banner_list": [
       {
+
         "banner": [
           {
             "pic_url": "../images/dzswz.jpg",
@@ -23,7 +24,6 @@ Page({
           },
           {
             "pic_url": "../images/jzzs.jpg",
-
           }
         ]
       }
@@ -50,7 +50,7 @@ Page({
       },
       {
         "name": "小米Max",
-         "pic_url": "http://static.home.mi.com/app/shop/img?id=shop_35a026ff12d476496f91d121911af0ce.jpg&crop=a_90_0_240_240",
+        "pic_url": "http://static.home.mi.com/app/shop/img?id=shop_35a026ff12d476496f91d121911af0ce.jpg&crop=a_90_0_240_240",
         "summary": "6.44寸大屏黄金尺寸,买赠智能显示保护套",
         "ext_tag": "http://static.home.mi.com/app/shop/img?id=shop_86f01fa8cea034deb1dce44c0385baab.png&w=420&h=240&crop=a_0_120_1080_480&t=png"
       },
@@ -65,8 +65,8 @@ Page({
         "summary": "全新空气增压系统,净化性能高达 310m³/h",
         "pic_url": "http://static.home.mi.com/app/shop/img?id=shop_0b23f4b364ee73bc86b280cc7397638c.jpg&w=420&h=240&crop=a_90_0_240_240"
       }
-    ],
-  },
+    ]
+  },  
   //分享处理函数
   onShareAppMessage: function () {
     return {
@@ -117,5 +117,23 @@ Page({
       url: '../map/map'
     })
   },
-
+  //摄像事件
+  takePhoto() {
+    const ctx = wx.createCameraContext()
+    ctx.takePhoto({
+      quality: 'high',
+      success: (res) => {
+        this.setData({
+          src: res.tempImagePath
+        })
+      }
+    })
+  },
+  front(obj){
+    
+  },
+  error(e) {
+    console.log(e.detail)
+  }
+  
 })
