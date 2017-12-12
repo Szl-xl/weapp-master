@@ -9,6 +9,7 @@ Page({
     autoplay: true,
     interval: 3000,
     duration: 100,
+    back: 'back',
     "banner_list": [
       {
 
@@ -117,7 +118,7 @@ Page({
       url: '../map/map'
     })
   },
-  //摄像事件
+  //添加拍照事件
   takePhoto() {
     const ctx = wx.createCameraContext()
     ctx.takePhoto({
@@ -129,8 +130,15 @@ Page({
       }
     })
   },
-  front(obj){
-    
+  front: function () {
+    this.setData({
+      back: 'front'
+    })
+  },
+  post: function () {
+    this.setData({
+      back: 'back'
+    })
   },
   error(e) {
     console.log(e.detail)

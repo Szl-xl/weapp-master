@@ -122,6 +122,5 @@
 
 /*摄影*/
 .camera{
-  display: flex;
-  flex-direction: column;
+  device-position: back;
 }
